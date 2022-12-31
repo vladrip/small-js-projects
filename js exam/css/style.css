@@ -1,0 +1,72 @@
+body {
+   background: #E8CBC0;
+   background: linear-gradient(to right, #636FA4, #E8CBC0);
+}
+
+.display-5 {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#search-textfield {
+   border-radius: 0 5px 5px 0;
+}
+
+#search-icon {
+   height: 38px;
+   width: 50px;
+   border: 1px solid #ced4da;
+   border-radius: 5px 0 0 5px;
+   background-color: white;
+   background-image: url("../images/geo.svg");
+   filter: brightness(110%);
+   background-repeat: no-repeat;
+   background-size: 28px;
+   background-position: center;
+}
+
+#weather-slider {
+   overflow-x: auto;
+   background-color: white;
+   padding: 0.8em 0.3em 0;
+   border-radius: 20px;
+}
+
+.weather-icon {
+   margin: 0 auto;
+   width: 100%;
+   height: 4.5em;
+   /*background-image: url("http://openweathermap.org/img/wn/10d@2x.png");*/
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: center;
+}
+
+#weather-card {
+   border-radius: 20px;
+   font-size: large;
+}
+
+.weather-card-column {
+   width: 45%;
+}
+
+.weather-card-column > div {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 0.5em;
+}
+
+.weather-card-column > div > p {
+   margin-bottom: 0;
+}
+
+.weather-card-img {
+   height: 1.7em;
+   width: 1.7em;
+   margin-right: 0.7em;
+}
+
+.weather-card-separator {
+   opacity: 100%;
+   border-top: 1px solid #f29a82;
+}

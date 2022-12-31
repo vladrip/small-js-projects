@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+body {
+    background-color: #26335D;
+    font-family: 'Montserrat', sans-serif !important;
+    letter-spacing: 0.5px !important;
+}
+
+#header-bg {
+    height: 50em;
+    width: 100%;
+    position: absolute; 
+    top: 0;
+    right: 0; 
+    z-index: -1; 
+    background-image: url('../images/header.png');
+    background-size: cover;
+}
+
+nav a {
+    color: white !important;
+}
+
+.playbtn {
+    width: 20%;
+    aspect-ratio: 1/1;
+    border: 0;
+    font-size: x-large;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.card {
+    transition: 0.3s;
+}
+.card:hover {
+    z-index: 5;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.card-classroom {
+    aspect-ratio: 1/0.8; 
+    background-image: url("../images/classroom.jpeg");
+    background-size: cover;
+}
+
+footer a, footer p, footer h5 {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

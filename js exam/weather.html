@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-md-4 mb-3">
+            <div class="col-md-9 col-lg-7 col-xl-6">
+                <h2 class="mb-4 display-5 text-center">Weather Forecast</h2>
+    
+                <div class="input-group rounded mb-3 align-items-center">
+                    <div id="search-icon"></div>
+                    <input class="form-control" id="search-textfield" placeholder="Enter a location" autocomplete="on"/>
+                </div>
+        
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input id="celsius" class="form-check-input" type="radio" name="inlineRadioOptions" value="option1" checked />
+                        <label class="form-check-label" for="celsius">Celsius</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input id="farenheit" class="form-check-input" type="radio" name="inlineRadioOptions" value="option2" />
+                        <label class="form-check-label" for="farenheit">Farenheit</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-4 pb-2">
+            <div class="col-12 col-lg-10 col-xl-11 col-xxl-10">
+                <div id="weather-slider" class="row flex-nowrap text-center">
+                </div>
+            </div>        
+        </div>
+
+        <div class="row justify-content-center">
+            <div id="weather-card" class="card col-md-9 col-lg-7 col-xl-6">
+                <div class="card-header d-flex justify-content-between mt-3 mx-3 bg-body" style="border-color: #f29a82;">
+                    <div>
+                        <h5 id="chosen-time"></h5>
+                        <h1 id="chosen-temp" class="mt-3 mb-3 text-primary display-3"></h1>
+                        <h4 id="chosen-condition" class="mb-0"></h4>
+                        <p id="chosen-description" class="text-muted"></p>
+                    </div>
+                    <div id="chosen-icon" class="weather-icon mt-4" style="height:10em; width: 10em;"></div>
+                    <div>
+                        <h5 id="chosen-date"></h5>
+                        <div class="d-flex mt-4 pt-2">
+                            <img src="images/raindrops.svg" alt="precipitation" class="weather-card-img" title="precipitation">
+                            <p id="precipitation"></p>
+                        </div> 
+                        <div class="d-flex my-1">
+                            <img src="images/wind.svg" alt="wind" class="weather-card-img" title="wind speed">
+                            <p id="wind"></p>
+                        </div> 
+                        <div class="d-flex my-1">
+                            <img src="images/humidity.svg" alt="humidity" class="weather-card-img" title="humidity">
+                            <p id="humidity"></p>
+                        </div> 
+                    </div>
+                </div>
+                <div class="card-body d-flex justify-content-between">
+                    <div class="weather-card-column">
+                        <div>
+                            <img src="images/cloudiness.svg" alt="cloudiness" class="weather-card-img" title="cloudiness">
+                            <p id="cloudiness"></p>
+                        </div>
+                        <hr class="weather-card-separator">
+                        <div>
+                            <img src="images/visibility.svg" alt="visibility" class="weather-card-img" title="visibility">
+                            <p id="visibility"></p>
+                        </div>
+                    </div>
+                    <div class="weather-card-column">
+                        <div>
+                            <img src="images/pressure.svg" alt="pressure" class="weather-card-img" title="pressure">
+                            <p id="pressure"></p>
+                        </div>
+                        <hr class="weather-card-separator">
+                        <div>
+                            <img src="images/wind-direction.svg" alt="wind direction" class="weather-card-img" title="wind direction">
+                            <p id="wind-direction"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCq_H73eeRxgxOUW_f22yjITgpN2mPotGY&libraries=places"></script>
+    <script src="js/code.js"></script>
+</body>
+</html>
